@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 # Modify default IP
-sed -i 's/192.168.1.1/192.168.100.2/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/3.1.1.1/g' package/base-files/files/bin/config_generate
 # mkdir package/base-files/files/config
 # echo 0xDEADBEEF > package/base-files/files/config/google_fu_mode
 rm -rf package/lean/smartdns
