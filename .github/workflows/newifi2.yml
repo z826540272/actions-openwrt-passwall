@@ -18,7 +18,7 @@ on:
     branches:
       - master
     paths:
-      - 'newifi-d1.config'
+      - 'newifi2.config'
   schedule:
     - cron: 0 8 * * 5
   watch:
