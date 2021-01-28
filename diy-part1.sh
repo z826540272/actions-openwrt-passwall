@@ -13,4 +13,4 @@ sed -i 's/192.168.1.1/10.0.0.10/g' package/base-files/files/bin/config_generate
 # git clone -b lede https://github.com/pymumu/luci-app-smartdns.git feeds/luci/applications/luci-app-smartdns
 # git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
 
-sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
+# sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
