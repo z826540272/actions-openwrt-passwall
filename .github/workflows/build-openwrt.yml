@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: WR1200JS
+name: WR1200JS-Passwall
 
 on:
   repository_dispatch:
