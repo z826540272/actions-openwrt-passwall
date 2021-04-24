@@ -15,3 +15,11 @@ sed -i 's/192.168.1.1/10.0.0.10/g' package/base-files/files/bin/config_generate
 
 sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
 sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
+
+git clone https://github.com/garypang13/luci-app-bypass.git package/luci-app-bypass
+git clone https://github.com/garypang13/smartdns-le package/smartdns-le
+git clone https://github.com/jerrykuku/luci-app-vssr package/lean/luci-app-vssr
+wget -P package/lua-maxminddb https://raw.githubusercontent.com/garypang13/openwrt-packages/master/lua-maxminddb/Makefile
+wget -P package/redsocks2 https://raw.githubusercontent.com/coolsnowwolf/lede/master/package/lean/redsocks2/Makefile
+find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-redir/shadowsocksr-libev-alt/g' {}
+find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-server/shadowsocksr-libev-server/g' {}
