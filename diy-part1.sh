@@ -5,6 +5,8 @@
 #=================================================
 # Modify default IP
 sed -i 's/192.168.1.1/10.0.0.10/g' package/base-files/files/bin/config_generate
+# DNS Cache FixUP
+echo -e "#max-ttl=600\nneg-ttl=600\nmin-cache-ttl=3600" >> package/network/services/dnsmasq/files/dnsmasq.conf
 # mkdir package/base-files/files/config
 # rm -rf package/lean/smartdns
 # git clone -b lede https://github.com/pymumu/luci-app-smartdns.git feeds/luci/applications/luci-app-smartdns
