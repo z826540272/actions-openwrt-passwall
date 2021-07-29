@@ -11,6 +11,7 @@ echo -e "#max-ttl=600\nneg-ttl=600\nmin-cache-ttl=3600\nauth-ttl=3600" >> packag
 # rm -rf package/lean/smartdns
 # git clone -b lede https://github.com/pymumu/luci-app-smartdns.git feeds/luci/applications/luci-app-smartdns
 # git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
+git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 
 sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
 sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
