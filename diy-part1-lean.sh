@@ -22,4 +22,4 @@ sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.de
 
 #git clone https://github.com/jerrykuku/lua-maxminddb.git package/lean/lua-maxminddb
 #git clone https://github.com/jerrykuku/luci-app-vssr.git package/lean/luci-app-vssr
-git clone https://github.com/destan19/OpenAppFilter.git package/lean/OpenAppFilter
+#git clone https://github.com/destan19/OpenAppFilter.git package/lean/OpenAppFilter
