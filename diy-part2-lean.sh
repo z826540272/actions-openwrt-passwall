@@ -4,4 +4,4 @@
 # Lisence: MIT
 # Author: P3TERX
 # Blog: https://p3terx.com
-sed -i 's/+ip /+ip-full /' feeds/passwall/luci-app-passwall/Makefilex
+# sed -i 's/+ip /+ip-full /' feeds/passwall/luci-app-passwall/Makefile
