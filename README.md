@@ -1,6 +1,6 @@
 # actions-openwrt-passwall
 # IP地址 10.0.0.10
-# 友华WR1200JS Lean固件.
+# 友华WR1200JS Lean固件
 - **感谢** [P3TERX/Actions-OpenWrt](https://github.com/P3TERX/Actions-OpenWrt)和[Lienol/openwrt](https://github.com/Lienol/openwrt)
 
 - 通过修改`diy.sh`文件可以自定义默认IP，登陆密码等。
