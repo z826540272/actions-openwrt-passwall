@@ -70,11 +70,17 @@ jobs:
         df -hT $PWD
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
+        
     - name: 编译缓存
-      uses: klever1988/cachewrtbuild@test
+      uses: klever1988/cachewrtbuild@main
       with:
         ccache: 'true'
-        prefix: '${{ github.workspace }}/openwrt'
+        prefix: ${{ github.workspace }}/openwrt
+        toolchain: true
+        #是否跳过工具链编译
+        skip: true
+        #清空缓存
+        clean: false
 
     - name: 载入自定义 feeds
       run: |
